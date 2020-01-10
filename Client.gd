@@ -1,19 +1,21 @@
 extends Node
 
-var IP_SERVER = "127.0.0.1" #"34.202.96.244"
+var IP_SERVER = "255.255.255.255" #"34.202.96.244"
 var PORT_SERVER = 1507
 var PORT_CLIENT = 1509
 var socketUDP = PacketPeerUDP.new()
 var cron_send = 0
 
 func _ready():
-    start_client()
+	pass
+    #start_client()
 
 func _process(delta):
     if cron_send > 0:
         cron_send -= delta
     if cron_send <= 0:
-        if socketUDP.is_listening():
+        #if socketUDP.is_listening():
+        if true:
             socketUDP.set_dest_address(IP_SERVER, PORT_SERVER)
             var stg = "hi server!"
             var pac = stg.to_ascii()

@@ -3,7 +3,7 @@ extends Node
 var IP_CLIENT
 var PORT_CLIENT
 var PORT_SERVER = 1507
-var IP_SERVER = "127.0.0.1"
+var IP_SERVER = "0.0.0.0"
 var socketUDP = PacketPeerUDP.new()
 
 func _ready():
