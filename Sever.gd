@@ -17,7 +17,7 @@ func _process(delta):
         var PORT_CLIENT = socketUDP.get_packet_port()
         printt("msg server: " + array_bytes.get_string_from_ascii())
         socketUDP.set_dest_address(IP_CLIENT, PORT_CLIENT)
-        var stg = "hi server!"
+        var stg = "hi client!"
         var pac = stg.to_ascii()
         socketUDP.put_packet(pac)
 

@@ -23,7 +23,7 @@ func _process(delta):
 
     if socketUDP.get_available_packet_count() > 0:
         var array_bytes = socketUDP.get_packet()
-        printt("msg server: " + array_bytes.get_string_from_ascii())
+        printt("msg client: " + array_bytes.get_string_from_ascii())
 
 func start_client():
     if (socketUDP.listen(PORT_CLIENT, IP_SERVER) != OK):
