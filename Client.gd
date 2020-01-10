@@ -1,6 +1,6 @@
 extends Node
 
-var IP_SERVER = "0.0.0.0" #"34.202.96.244"
+var IP_SERVER = "255.255.255.255" #"34.202.96.244"
 var PORT_SERVER = 1507
 var PORT_CLIENT = 1509
 var socketUDP = PacketPeerUDP.new()
